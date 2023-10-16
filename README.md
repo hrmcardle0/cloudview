@@ -18,6 +18,16 @@ VueJS front end -> API Gateway calls with auth password -> triggers Lambda -> ca
 
 Builds and deploys directly to an s3 bucket hosted by CyberSec.
 
-Build for production:
+To build and run in a production S3 static website bucket, perform the following:
 
-`git clone http://ldngitl01v.rivagecapital.com/secops/development/aws/cloudview.git && chmod +x ./build-to-s3 && ./build-to-s3.sh`
+Clone the Repo
+
+`git clone http://ldngitl01v.rivagecapital.com/secops/development/aws/cloudview.git`
+
+Set appropriate permissions on build script, ensuring your env variables are set
+
+`chmod +x ./build-to-s3`
+
+Run to deploy to s3
+
+`./build-to-s3.sh`
