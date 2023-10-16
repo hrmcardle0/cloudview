@@ -436,7 +436,7 @@ export default {
                 let res = await fetch('https://dgzwfgko18.execute-api.eu-west-1.amazonaws.com/v6/findings', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({"password": "APITestPassWord123@", "sqlCommand": query})
+                    body: JSON.stringify({"password": this.login, "sqlCommand": query})
                 })
                 
                 data = await res.json()
