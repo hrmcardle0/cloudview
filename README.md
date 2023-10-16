@@ -3,6 +3,9 @@
 CloudView is the frontend of a larger tool that has various AWS security findings streamed into a database and allows the querying of the database to consolidate findings across the Coremont organization. This front end
 is built in VueJS and contains a user input box for querying via SQL the backend Postgres DB that holds various findings.
 
+![alt text](https://github.com/hrmcardle0/cloudview/blob/main/public/github-pic1.PNG?raw=true)
+
+
 ### How it works
 
 CloudView is the VueJS frontend the user hits upon going to the front end URL. The user then ends in an API password, that is checked against a Lambda auth function, which then authorizes the user to perform
