@@ -14,7 +14,9 @@ metrics are also cached to lessen the number of API calls.
 
 ### Technical Deployment
 
-VueJS front end -> API Gateway calls with auth password -> triggers Lambda -> calls into Postgres RDS database -> returns query results and metrics
+VueJS front end -> API Gateway calls with auth password -> triggers Lambda -> calls into Postgres RDS database -> returns query results and metrics.
+
+Builds and deploys directly to an s3 bucket hosted by CyberSec.
 
 Build for production:
 
