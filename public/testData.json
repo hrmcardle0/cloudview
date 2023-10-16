@@ -1,0 +1,34 @@
+{
+    "Findings": [
+        {
+            "AccountName": "Clarion",
+            "AccountId": "123412341234",
+            "Finding": "This is a test finding!",
+            "Resource": "EC2"
+        },
+        {
+            "AccountName": "Application",
+            "AccountId": "940332504938",
+            "Finding": "TESTING",
+            "Resource": "EC2"
+        },
+        {
+            "AccountName": "Clarion",
+            "AccountId": "123412341234",
+            "Finding": "This is a second test finding!",
+            "Resource": "IAM"
+        },
+        {
+            "AccountName": "Unix",
+            "AccountId": "194839203402",
+            "Finding": "TESTING",
+            "Resource": "IAM"
+        },
+        {
+            "AccountName": "Application",
+            "AccountId": "940332504938",
+            "Finding": "TESTING",
+            "Resource": "IAM"
+        }
+    ]
+}
