@@ -12,7 +12,7 @@ npm run build
 zip -r9 ../website.zip dist/
 
 # upload to storage bucket for saving
-aws s3 cp ../website.zip s3://cm-cybersec-misc --no-verify-ssl
+aws s3 cp ../website.zip s3://$storagebucket --no-verify-ssl
 
 cd dist
 
@@ -20,10 +20,10 @@ for file in $(ls);
 do
     if [[ -d $file ]]; then
         echo "$file is a directory"
-        aws s3 cp $file s3://coremont-security-finding-tool/$file --recursive --no-verify-ssl
+        aws s3 cp $file s3://$websitebucket/$file --recursive --no-verify-ssl
     elif [[ -f $file ]]; then
         echo "$file is a file"
-        aws s3 cp $file s3://coremont-security-finding-tool/ --no-verify-ssl
+        aws s3 cp $file s3://$websitebucket/ --no-verify-ssl
     else
         echo "$file is not valid"
     fi
