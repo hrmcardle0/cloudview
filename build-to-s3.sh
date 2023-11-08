@@ -1,9 +1,4 @@
 #!/bin/bash
-# set proxy vars
-export http_proxy=http://proxycore.rivagecapital.com:9443
-export https_proxy=http://proxycore.rivagecapital.com:9443
-export no_proxy=10.0.0.0/8,.execute-api.eu-west-1.amazonaws.com,169.254.169.254
-
 # build npm package
 echo "Building..."
 npm run build
