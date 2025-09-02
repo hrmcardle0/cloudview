@@ -35,8 +35,6 @@ To build and run in a production S3 static website bucket, perform the following
 
 Clone the Repo
 
-`git clone http://ldngitl01v.rivagecapital.com/secops/development/aws/cloudview.git`
-
 Set appropriate permissions on build script, ensuring your env variables are set
 
 `chmod +x ./build-to-s3`
